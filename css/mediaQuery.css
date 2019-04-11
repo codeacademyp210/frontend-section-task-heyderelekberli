@@ -1,0 +1,16 @@
+@media only screen and (max-width: 768px){
+.leftHeader{
+width:100%;
+}
+.rightHeader{
+    width:100%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .logoPart{
+    width:100%;
+    }
+    .listPart{
+        width:100%;
+        }
+    }
