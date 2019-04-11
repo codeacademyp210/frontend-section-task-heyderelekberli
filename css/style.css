@@ -91,7 +91,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 .sliderButton{
     position: absolute;
@@ -111,4 +110,81 @@
 }
 .nextSlider{
     right: 10px;
+}
+.headText{
+    padding:30px 0px;
+    color:#100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headText>h5{
+    font-size:23px;
+    word-spacing: 13px;
+}
+.headText>h1{
+    font-size:45px;
+    margin:2px 0px 10px 0px;
+}
+.headText>h1>span{
+    color:#fd602c;
+}
+.headText>p{
+    width:3%;
+    height:2px;
+    background-color: #100;
+}
+.imageDiv{
+    width: 38%;
+    height: 92%;
+   border:1px solid transparent;
+   border-radius: 50%;
+   overflow: hidden;
+   position: relative;
+}
+.imageDiv>img{
+    width:100%;
+    height:100%;
+}
+.shadowDiv{
+position: absolute;
+width: 36%;
+height: 92%;
+background-color: rgba(253, 96, 44, 0.9);
+border:1px solid transparent;
+border-radius: 50%;
+z-index: 1;
+transform:translate(50%, 0%)
+}
+.shadowDiv>p{
+    text-align: center;
+    line-height: 29vh;
+    color:white;
+    font-size:24px;
+}
+.paragraph{
+    width:70%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:15px;
+}
+.paragraph>div{
+    width:60%;
+    height:100%;
+    color:#777;
+    font-size:18px;
+    padding:5px 0px;
+}
+.paragraph>div>a{
+    color:#fd602c;
+
+}
+.paragraph>div>a:hover{
+    color:#222;
+    text-decoration: none;
+}
+.contentImage{
+    display:flex;
+    padding:0px;
 }
