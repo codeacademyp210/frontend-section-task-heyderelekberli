@@ -5,12 +5,16 @@ width:100%;
 .rightHeader{
     width:100%;
     }
+    
 }
-@media only screen and (max-width: 7680px){
+@media only screen and (max-width: 1100px){
     .logoPart{
     width:100%;
     }
     .listPart{
         width:100%;
+        }
+        .listPart ul li a {
+            font-size: 0.8em;
         }
     }
