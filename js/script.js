@@ -1,5 +1,15 @@
 "use strict";
 
+function myFunction() {
+    var x = document.getElementById("listSection");
+    if (x.className === "listPart") {
+      x.className += " responsive";
+    } else {
+      x.className = "listPart";
+    }
+  }
+ 
+  
 const mainSlayt = document.querySelector(".mainSlider");
 const slide = Array.from(mainSlayt.children);
 const prevButton = document.querySelector(".prevBtn");
@@ -24,10 +34,8 @@ prevButton.addEventListener("click", function (e) {
         mainSlayt.style.transform = "translateX(-" + prev.style.left + ")";
     }
 });
-// Click next button, slider move to the right
 nextButton.addEventListener("click", function (e) {
     let showSlider = mainSlayt.querySelector(".show");
-    console.log(showSlider);
     if (showSlider.nextElementSibling) {
         let next = showSlider.nextElementSibling;
         next.classList.add("show");
@@ -38,3 +46,40 @@ nextButton.addEventListener("click", function (e) {
         mainSlayt.style.transform = "translateX(-" + next.style.left + ")";
     }
 });
+ 
+document.querySelector(".bulb").addEventListener("mouseover", function(){
+  let header = document.querySelector(".user");
+  header.style.color=("#fd602c");
+  console.log(header);
+})
+ 
+document.querySelector(".bulb").addEventListener("mouseout", function(){
+  let header = document.querySelector(".user");
+  header.style.color=("black");
+  console.log(header);
+})
+
+document.querySelector(".layer").addEventListener("mouseover", function(){
+  let header2 = document.querySelector(".res");
+  header2.style.color=("#fd602c");
+})
+ 
+document.querySelector(".layer").addEventListener("mouseout", function(){
+  let header2 = document.querySelector(".res");
+  header2.style.color=("black");
+})
+
+
+
+
+
+document.querySelector(".pic").addEventListener("mouseover", function(){
+  let img = document.querySelector(".jk");
+  img.style.transform = ("scale(1.1)");
+})
+ 
+document.querySelector(".pic").addEventListener("mouseout", function(){
+  let img = document.querySelector(".jk");
+  img.style.transform = ("scale(1)");
+  console.log(img);
+})
