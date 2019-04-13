@@ -5,6 +5,10 @@ width:100%;
 .rightHeader{
     width:100%;
     }
+    .contentImage{
+        width:100%;
+    }
+  
     
 }
 @media only screen and (max-width: 1100px){
@@ -17,4 +21,9 @@ width:100%;
         .listPart ul li a {
             font-size: 0.8em;
         }
+        .foto{
+            width:100%;
+        }
+        .transformate{
+            display:none;}
     }

@@ -6,7 +6,7 @@
 .container-fluid, .row , .col-6{
     padding:0px;
     margin:0px;
-}-
+}
 .leftHeader, .rightHeader{
    display:flex;
    justify-content: center;
@@ -72,31 +72,31 @@
     color:#fd602c;
 }
 /* slider */
-.sliderPart {
+.slider {
     position: relative;
-    height: 100vh;
+    height: 100Vh;
     width: 100%;
     overflow: hidden;
-    margin: 0 auto;
 }
 .mainSlider{
     position: relative;
     height: 100%;
     transition: all 0.7s;
 }
-.sliderPart .slider-item {
+.slider .slidePart {
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.slider-item img {
+.slider .slidePart img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.sliderButton{
+.sliderBtn{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -106,14 +106,19 @@
     color: #fff;
     cursor: pointer;
 }
-.sliderButton:focus{
-    outline: none;
+.sliderBtn:focus{
+    outline-style: none;
 }
-.prevSlider{
+.sliderBtn.prevBtn{
     left: 10px;
 }
-.nextSlider{
+.sliderBtn.nextBtn{
     right: 10px;
+}
+.slider-content {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
 }
 .headText{
     padding:30px 0px;
@@ -191,47 +196,62 @@ align-items: center;
 }
 .contentImage{
     display:flex;
-    padding:0px;
 }
 .foto{
     width:100%;
     height:100vh;
+    margin:0px;
+    padding:0px;
 }
 .foto>img{
     width:100%;
     height:100%;
-}
+ }
 .transformate{
     position: relative;
     background-color: rgba(153, 153, 153, 0.11);
 }
-.offer{
+.transformateDiv{
     width:120%;
-    height:83%;
+    height:86%;
     background-color: white;
     position: absolute;
     transform:translate(-25%, 11%);
-    padding:50px 0px 0px 50px;
+    padding:auto;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.offer{
+width:85%;
+height:80%;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.differ{
     display:flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.offer>p{
-    margin-bottom:50px;
+.differ>p{
+    width:6%;
 }
 .offer>ul>li{
-    margin-top:12px;
+    margin-bottom:12px;
 }
 .offer>ul>li>i{
     color:#fd602c;
     margin-right:7px;
 }
 .readMore{
-    padding:12px 35px;
+    width:150px; 
+    padding:13px 10px ;
+    text-align: center;
     border:1px solid transparent;
-    border-radius:18px;
+    border-radius:20px;
     background-color: #fd602c;
-    /* margin-top:80px; */
     color:white;
     transition: all 0.7s;
 }
@@ -239,4 +259,4 @@ align-items: center;
     text-decoration: none;
     background-color: #111;
     color:white;
-}
+} 
