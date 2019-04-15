@@ -1,0 +1,216 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+    /* Header */
+.banner{
+    color:#727272;
+    border-bottom:1px solid #7272721c;
+}
+.leftHeader, .rightHeader{
+    display:flex;
+    justify-content: center;
+    padding:20px 0px;
+}
+.leftHeader>p{
+    margin-right:10px;
+    padding:6px 10px;
+}
+.listUl{
+    display: flex;
+    justify-content: center;
+}
+.listUl>li{
+    margin-left:10px;
+    padding:6px 10px;
+}
+.listUl>li>a{
+    transition: all 0.6s;
+    color:#727272;
+}
+.listUl>li>a:link{
+    text-decoration: none;
+}
+.listUl>li>a:hover{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+.listUl>li:nth-child(1), .listUl>li:nth-child(2) {
+    border-right:1px solid #727272;
+    padding: 6px 10px;
+}
+    /* Main */
+    /* Logo Part */
+    .logoPart, .listPart{
+        padding:20px 0px;
+        display:flex;
+        justify-content: center;
+    }
+    .logoPart img{
+        width:100%;
+        height:100%;
+    }
+    .logoPart img:hover{
+        cursor: pointer;
+    }
+        /* topnav */
+    .listPart {
+        overflow: hidden;
+        }
+        .listPart>a{
+        float: left;
+        display: block;
+        color:rgba(34, 34, 34, 0.781);
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .listPart>a:hover{
+        color: #fd602c;
+        }
+        .active{
+        color: #fd602c !important;
+    }
+        .listPart>.icon {
+        display: none;
+        color:#666;
+    }
+        .listPart.responsive a {
+        float: none;
+        display: block;
+    }
+.imagePart{
+    width:100%;
+    height:250px;
+    overflow: hidden;
+}
+.imagePart>img{
+    width:100%;
+    position: relative;
+}
+.greyLight{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.greyLight>h1{
+    font-size:27px;
+    font-weight: bold;
+}
+.greyLight>p{
+    font-size:18px;
+    margin-top:1%;
+}
+.comeBack{
+    width:100%;
+    border-bottom:1px solid #7272721c;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.comeBack>h1{
+    font-size:25px;
+}
+.comeBack>ul{
+    display: flex;
+    color:#727272;
+}
+.comeBack>ul>li>a{
+    color:black;
+    text-decoration:none;
+}
+.image-container{
+    width:100%;
+    height:470px;
+    margin-top:2%;
+}
+.image-container>img{
+    width:100%;
+    height:100%;
+}
+.text-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:470px;
+    margin-top:2%;
+}
+.text-container>p{
+    margin-bottom:5%;
+    font-size: 18px;
+    color:#727272;
+}
+.text-container>p:nth-child(1){
+    font-size: 100%;
+    color: #fd602c;
+}
+.readMore{
+    width:18%;
+    padding:1.5% 3.2%;
+    text-decoration: none;
+    color:white;
+    background-color: #fd602c;
+    text-align: center;
+    transition: all 0.5s;
+}
+.readMore:hover{
+    background-color: black;
+}
+/* Parallax */
+.parallax{
+    width:100%;
+    height:450px;
+    background-image: url("../img/parallax12.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.effect{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    z-index: 2;
+}
+.innerParallax{
+    width:100%;
+    height:400px;
+    color:white;
+    overflow: hidden;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.innerParallax>p{
+    font-size:21px;
+    margin:2%;
+}
+.innerParallax>p>span{
+    color:#fd602c;
+}
+.innerParallax>h1{
+    font-size:40px;
+}
+.paraBtn{
+    width:10%;
+    padding:1%;
+    border-radius:3px;
+}
