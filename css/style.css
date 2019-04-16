@@ -56,7 +56,7 @@ body{
 }
     /* topnav */
 .listPart {
-    overflow: hidden;
+    position: relative;
     }
     .listPart>a{
     float: left;
@@ -81,6 +81,189 @@ body{
     float: none;
     display: block;
 }
+.row-handle{
+    position: relative;
+}
+
+.handleHome, .handleAbout, .handleTeam, .handleCareers, 
+.handleService, .handlePortfolio, .handleFaq, .handleContact, .handleRegister, .handleBlog{
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    background-color: white;
+    opacity:0;
+    color:#727272;
+    border-top:1px solid rgba(68, 68, 68, 0.171);
+}
+.handleHome{
+    width:15%;
+    height:340px;
+    left:550px;
+}
+.handleHome>ul{
+    display:flex;
+    flex-direction: column;
+    text-align: center
+}
+.handleHome>ul>li{
+    margin-top:8%;
+}
+.hoverHome:hover .handleHome{
+opacity:1
+}
+.handleAbout{
+    width:86%;
+    height:430px;
+    left:100px;
+    display:flex;
+}
+.handleAbout>div{
+    width:33%;
+    height:100%;
+}
+.sameList>li{
+    margin-top:5%;
+}
+.sameList>li>p{
+color:black;
+margin-left:6%;
+}
+.sameList>li>i{
+    margin:0% 3% 0% 6%;
+}
+.sameList>li>span{
+    font-size:13px;
+    background-color: black;
+    color:white;
+    margin-left:2%;
+}
+.hoverAbout:hover .handleAbout{
+opacity:1
+}
+.handleTeam{
+    width:85%;
+    height:265px;
+    left:100px;
+    display:flex;
+}
+.handleTeam>div{
+    width:25%;
+    height:100%;
+}
+.hoverTeam:hover .handleTeam{
+opacity:1
+}
+.handleService{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverSevice:hover .handleService{
+opacity:1
+}
+.handleCareers{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverCareers:hover .handleCareers{
+opacity:1
+}
+.handleFaq{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverFaq:hover .handleFaq{
+opacity:1
+}
+.handleRegister{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverRegister:hover .handleRegister{
+opacity:1
+}
+.handlePortfolio{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverPortfolio:hover .handlePortFolio{
+opacity:1
+}
+.handleBlog{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverBlog:hover .handleBlog{
+opacity:1
+}
+.handleContact{
+    width:90%;
+    height:300px;
+    border:1px solid red;
+    position: absolute;
+    top:100%;
+    z-index: 50;
+    margin-left:6%;
+    background-color: white;
+    opacity:0;
+}
+.hoverContact:hover .handleContact{
+opacity:1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* slider */
 .slider {
     position: relative;
@@ -325,7 +508,7 @@ body{
     padding:0px;
     margin:0px;
 }
-iframe{
+video{
     position: relative;
 }
 .videoPart{
@@ -341,7 +524,7 @@ iframe{
     padding:0px;
     margin:0px;
     width:100%;
-    height:80vh;
+    height:500px;;
 }
 .collect1{
     display:flex;
@@ -681,7 +864,7 @@ iframe{
 }
 .tableSection{
     width:100%;
-    height:80vh;
+    height:500px;;
     background-color: rgba(119, 119, 119, 0.055);
     border:1px solid rgba(119, 119, 119, 0.11);
 }
@@ -741,11 +924,11 @@ iframe{
 .premiumPart{
     background-color: #fd602c;
     border:none;
-    height:87vh;
+    height:543px;
     transform:translate(0%, -4%);
 }
 .specificPic{
-    transform: translate(37%, -21%);
+    transform: translate(68px, -15px);
     position: relative;
 }
 .specificPic>img{
@@ -756,7 +939,7 @@ iframe{
     position: absolute;
     width:100%;
     height:60%;
-    transform:translate(-37%, 90%);
+    transform:translate(-37%, 65%);
     display:flex;
     flex-direction: column;
     align-items: center;

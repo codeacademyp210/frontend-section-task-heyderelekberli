@@ -37,10 +37,9 @@ prevButton.addEventListener("click", function (e) {
         mainSlayt.style.transform = "translateX(-" + prev.style.left + ")";
     }
 });
-// Click next button, slider move to the right
+
 nextButton.addEventListener("click", function (e) {
     let showSlider = mainSlayt.querySelector(".show");
-    console.log(showSlider);
     if (showSlider.nextElementSibling) {
         let next = showSlider.nextElementSibling;
         next.classList.add("show");
