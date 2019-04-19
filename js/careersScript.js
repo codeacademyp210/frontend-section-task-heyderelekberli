@@ -18,7 +18,8 @@ for (let i = 0; i < buttons.length; i++) {
         document.querySelector("#" + elementId).style.display = "flex";
     });
 }
-"use strict";
+
+
 // Accordion
 let accord = document.getElementsByClassName("accordion");
 let i;

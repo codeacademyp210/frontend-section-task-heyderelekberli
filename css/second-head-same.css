@@ -3,9 +3,14 @@ body{
     padding:0px;
 }
     /* Header */
+header{
+        border-bottom:1px solid rgba(68, 68, 68, 0.164);
+  
+    }
 .banner{
-    background-color: #fd602c;
-    color:white;
+    background-color: #fff;
+    color:rgba(68, 68, 68, 0.575);
+    
 }
 .leftHeader, .rightHeader{
     display:flex;
@@ -15,6 +20,7 @@ body{
 .leftHeader>p{
     margin-right:10px;
     padding:6px 10px;
+  
 }
 .listUl{
     display: flex;
@@ -26,7 +32,7 @@ body{
 }
 .listUl>li>a{
     transition: all 0.6s;
-    color:white;
+    color:rgba(68, 68, 68, 0.575);
 }
 .listUl>li>a:link{
     text-decoration: none;
@@ -37,7 +43,7 @@ body{
     cursor: pointer;
 }
 .listUl>li:nth-child(1), .listUl>li:nth-child(2) {
-    border-right:1px solid white;
+    border-right:1px solid rgba(68, 68, 68, 0.575);
     padding: 6px 10px;
 }
     /* Main */
@@ -57,12 +63,11 @@ body{
     /* topnav */
 .listPart {
     position: relative;
-    /* display:block */
     }
     .listPart>a{
     float: left;
     display: block;
-    color:rgba(34, 34, 34, 0.781);
+    color:rgba(68, 68, 68, 0.692);
     text-align: center;
     padding: 14px 10px;
     text-decoration: none;
@@ -251,6 +256,54 @@ opacity:1
 }
 .hoverContact:hover .handleContact{
 opacity:1
+}
+
+.imagePart{
+    width:100%;
+    height:250px;
+    overflow: hidden;
+}
+.imagePart>img{
+    width:100%;
+    position: relative;
+}
+.greyLight{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.greyLight>h1{
+    font-size:27px;
+    font-weight: bold;
+}
+.greyLight>p{
+    font-size:18px;
+    margin-top:1%;
+}
+.comeBack{
+    width:100%;
+    border-bottom:1px solid #7272721c;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.comeBack>h1{
+    font-size:25px;
+}
+.comeBack>ul{
+    display: flex;
+    color:#727272;
+}
+.comeBack>ul>li>a{
+    color:black;
+    text-decoration:none;
 }
 
 

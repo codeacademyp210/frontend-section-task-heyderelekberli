@@ -26,6 +26,9 @@ width:100%;
     .logoZone{
       width:33% !important;
     }
+    .envato{
+      font-size:7px
+    }
 }
 @media only screen and (max-width: 1100px){
         .listPart>a {
@@ -55,5 +58,8 @@ width:100%;
         }
         .imageCollect{
         width:100%;
+        }
+        .envato{
+          font-size:0.5em
         }
       }
