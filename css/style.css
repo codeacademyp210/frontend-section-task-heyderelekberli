@@ -1,5 +1,30 @@
+/* Fixed Button */
+.scroll-top{    
+    position: fixed;
+    right: 35px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #fd602c;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    opacity: 0.5;
+    z-index: 50;
+}
 
-.topnav {
+
+
+
+
+
+
+
+/* .topnav {
     overflow: hidden;
     background-color: green;;
   }
@@ -9,7 +34,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 6px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -26,7 +51,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 998px) {
     .topnav a:not(:first-child) {
       display: none;
     }
@@ -37,7 +62,7 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 998px) {
     .topnav.responsive {
       position: relative;
     }
@@ -53,17 +78,8 @@
       display: block;
       text-align: left;
     }
-  }
+  } */
   
-
-
-
-
-
-
-
-
-
 
 
 /* slider */
@@ -786,10 +802,14 @@ video{
 }
 .logoZone{
     width:100%;
-    height:18vh;
+    height:120px;
     padding:0px;
 }
-.logoZone>img{
+.logoZone>div{
+    width:100%;
+    height:100%;
+}
+.logoZone>div>img{
     width:100%;
     height:100%;
 }

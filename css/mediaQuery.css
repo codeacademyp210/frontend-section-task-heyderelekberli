@@ -1,5 +1,22 @@
 @media only screen and (max-width: 768px){
-.leftHeader{
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+  .leftHeader{
 width:100%;
 }
 .rightHeader{
@@ -27,9 +44,37 @@ width:100%;
       width:33% !important;
     }
     .envato{
-      font-size:7px
+      font-size:0.1em
     }
+    .form-container{
+      width:100%;
+    }
+  .blog-content>h1>a{
+    font-size:16px;
+  }
+  .blog-content>p{
+    font-size:13px;
+  }
+  .col-blog{
+    width:100%;
+  }
+  .contact-text p{
+    font-size:13px;
+  }
+  .contact-text h1{
+    font-size:15px;
+  }
+ .border-list{
+   width:30px !important;
+   height:30px !important;
+
+ }
+.finish p{
+  font-size:13px !important;
 }
+
+}
+
 @media only screen and (max-width: 1100px){
         .listPart>a {
             font-size: 0.6em;
@@ -40,14 +85,8 @@ width:100%;
         .transformate{
             display:none;}
     }
-    @media screen and (max-width: 992px) {
-        .listPart a:not(:first-child) {display: none;}
-        .listPart a.icon {
-          float: right;
-          display: block;
-        }
-      }
-      @media screen and (max-width: 992px) {
+
+      @media screen and (max-width: 998px) {
         .listPart.responsive{
           position: relative;
         }
@@ -61,5 +100,12 @@ width:100%;
         }
         .envato{
           font-size:0.5em
+        }
+        .topnav a:not(:first-child) {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
         }
       }

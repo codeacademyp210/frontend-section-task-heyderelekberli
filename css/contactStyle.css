@@ -1,0 +1,148 @@
+/* Form Contact */
+.col-form{
+    width:100%;
+    height:700px;
+}
+.form-container{
+    width:100%;
+    height:100%;
+}
+.contact-text{
+    width:100%;
+    height:15%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size:17px;
+    color:#727272;
+}
+.contact-text>h1{
+    font-size:25px;
+    color:#222;
+}
+.register-form{
+    width:100%;
+    height:85%;
+}
+.register-form>div{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    height:10%;
+}
+.register-form>div>input{
+    width:100%;
+    height:38px;
+    padding-left:26px;
+    outline-color: #6BC868;
+    border:1px solid #72727256
+}
+.register-form>div>input:hover{
+    border-color: #6BC868;
+}
+.register-form>div>i{
+    color:rgba(119, 119, 119, 0.726);
+    transform: translate(20px, 12px);
+    font-size:13px;
+}
+.name-input{
+    height:13%;
+    display:flex;
+    align-items: center !important;
+}
+.name-input>i{
+    transform: translate(20px, 0px) !important;
+}
+.email-input{
+    margin-left:-1px
+}
+.subject-input{
+    margin-left:2px;
+}
+.messaje-input{
+    height:14% !important;
+}
+.messaje-input>input{
+    height:80px !important;
+    padding-bottom:44px;   
+    margin-left:-3px;
+    transition: all 0.4s;
+}
+.messaje-input>input:hover .bottom-button{
+    border-color:#6BC868;
+}
+.bottom-button{
+    width:98.6%;
+    height:28px;
+    margin:-3px 0px 0px 11px;
+    display:flex;
+    align-items: flex-start;
+    border:1px solid #72727256;
+    transition: all 0.4s;
+    border-top:none;
+    padding-top:5px;
+    font-size:13px;
+    color:#727272;
+}
+.bottom-button:hover{
+    border-color:#6BC868;
+}
+.account-btn{
+    border:1px solid transparent;
+    background-color: #fd602c;
+    text-decoration: none;
+    padding:13px 40px;
+    margin:20px 10px 0px 12px;
+    color:white;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+.account-btn:hover{
+   background-color: black
+}
+.dis-btn{
+    border:1px solid transparent;
+    padding:13px 40px;
+    margin:20px 10px 0px 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color:black
+}
+.dis-btn:hover{
+    opacity:0.9;
+}
+.col-map{
+    width:100%;
+    height:700px;
+}
+.map-head{
+    width:100%;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:#727272
+}
+.map-head>h1{
+    font-size:24px;
+    color:#222;
+}
+.address-link{
+    display: flex;
+    flex-direction: column; 
+}
+.address-link>a{
+    text-decoration: none;
+    color:#727272
+}
+.map-content{
+    width:100%;
+    height:50%;
+    overflow: hidden;
+    font-size:24px;
+}
+.mapouter{
+    width:100%;
+    height:90%;
+}

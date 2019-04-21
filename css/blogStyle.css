@@ -1,0 +1,127 @@
+.blog-container{
+    width:100%;
+    height:1500px;
+}
+.round-hover-div{
+    width:100%;
+    height:10%;
+    display:flex;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 6;
+}
+.round-icon{
+    width:60px;
+    height:60px;
+    border:1px solid transparent;
+    background-color: #fd602c;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+    z-index:5;
+    opacity:0;
+}
+.round-icon-second{
+    opacity:0;
+}
+.round-icon>a{
+    color:white;
+    transition: all 0.5s;
+}
+.round-icon:hover{
+    background-color: white;
+}
+.round-icon:hover a{
+    color:#fd602c;
+}
+.col-blog{
+    width:100%;
+    height:49%;
+    padding:0px;
+}
+.blog-images{
+    width:100%;
+    height:55%;
+    overflow: hidden;
+}
+.blog-images>img{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.calendar{
+    position: absolute;
+    width:110px;
+    height:120px;
+    z-index: 5;
+    left:30px;
+    top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fd602c;
+    color:white;
+}
+.calendar>h1{
+    font-size:33px;
+    margin:-13px 0px 5px 0px;
+}
+.black-color{
+position: absolute;
+width:100%;
+height:57%;
+z-index: 4;
+background-color: rgba(0, 0, 0, 0.103)
+}
+.white-calendar{
+    top:220px;
+    background-color: white;
+    color:black;
+}
+.blog-content{
+    width:100%;
+    height:29%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #727272;
+}
+.blog-content>h1{
+    margin-top:19px;
+    font-size:25px;
+}
+.blog-content>h1>a{
+    text-decoration: none;
+
+    color:#222;
+}
+.blog-list{
+    display: flex;
+}
+.blog-list>li{
+    margin-right:17px;
+}
+.blog-list>li>i{
+    font-size: 14px;
+    margin-right:7px;
+}
+.blog-btn{
+    width:100%;
+    height:10%;
+    display:flex;
+    align-items: flex-end;
+}
+.blog-btn>a{
+    text-decoration: none;
+    color:white;
+    border:1px solid transparent;
+    padding:12px 35px;
+    background-color: #fd602c;
+    transition: all 0.5s
+}
+.blog-btn>a:hover{
+    background-color: black;
+}

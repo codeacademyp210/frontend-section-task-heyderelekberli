@@ -257,7 +257,6 @@ opacity:1
 .hoverContact:hover .handleContact{
 opacity:1
 }
-
 .imagePart{
     width:100%;
     height:250px;
@@ -265,6 +264,7 @@ opacity:1
 }
 .imagePart>img{
     width:100%;
+    height:150%;
     position: relative;
 }
 .greyLight{
@@ -310,16 +310,13 @@ opacity:1
 
 
 
-
-
  /* Footer */
  footer{
     background-color: #101010;
   }
   .footPart{
       width:100%;
-      height:55vh;
-      padding:0;
+      height:300px;
   }
   .firstFoot>div:nth-child(1){
   width:100%;
@@ -454,44 +451,57 @@ opacity:1
   .endOf{
       background-color: #1a1a1a;
       width:100%;
-      height:30vh;
+      height:200px;
+      padding:0px;
+      margin:0px;
   }
-  
-  .lastDiv>div{
-      height:100%;
+  .lastDiv{
       width:100%;
+      height:100%;
+  }
+  .finish{
+    width:80%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
   }
   .lastList{
       display: flex;
-      justify-content: center;
-      position: relative;
   }
-  .lastList>li{
-      margin:0.6%;
+  .lastList i{
+   color:#fd602c;
+  }
+  .border-list{
+      width:50px;
+      height:50px;
       border:1px solid transparent;
-      border-radius:50%;
-      padding:1.1%;
-      background-color: white;
-      display:flex;
-      align-items: center;
+      border-radius: 50%;
+      display: flex;
       justify-content: center;
-      transition: all 0.4s;
+      align-items: center;
+      background-color: #fff;
+      transition: all 0.5s;
+      margin:0px 5px;
   }
-  .lastList>li>a{
-      color:#fd602c;
-  }
-  .lastList>li:hover .lastIcon{
-      color:white !important;
-  }
-  .lastList>li:hover{
+  .border-list:hover{
       background-color: #fd602c;
   }
-  .finish{
-      position: absolute;
-      text-align:center;
+  .border-list:hover i{
+    color:white;
+  }
+  .dribbble-icon{
+      background-color: #fd602c !important;
+  }
+  .dribbble-icon i{
+      color:white !important;
   }
   .finish>p{
-      font-size:20px;
-      color:#727272;
+      font-size:19px;
+      color:#777;
+      margin-top:13px;
   }
+  
   /* FINISHED */

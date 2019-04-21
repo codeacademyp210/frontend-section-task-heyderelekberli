@@ -1,4 +1,7 @@
+/* Form Register */
+
 .col-form{
+    width:100%;
     height:1100px;
 }
 .form-container{
