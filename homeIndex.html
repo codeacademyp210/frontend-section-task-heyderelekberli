@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/general-header-and-footer.css">
 </head>
 
+
+
+
+
 <body>
     <header>
         <nav>
@@ -60,10 +64,11 @@
         </nav>
         <span class="simple-section">
         </span>
-        <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+      
+    <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
     </header>
     <main>
-        <section>
+         <section class="sticky-navbar navvv">
             <div class="container-fluid">
                 <div class="row row-handle">
                     <div class=handleHome>
@@ -414,14 +419,14 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-4 col-md-2 logoPart">
+                    <div class="col-4 logoPart">
                         <div>
                             <a href="./homeIndex.html">
                                 <img src="img/logo.png" alt="logo">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8  listPart" id="listSection">
+                    <div class="col-8  listPart" id="listSection">
                         <div class="topnav" id="myTopnav">
                             <a href="./homeIndex.html" class="active hoverHome">Home</a>
                             <a href="./about.html" class="hoverAbout">About</a>
@@ -442,33 +447,72 @@
             </div>
         </section>
         <section>
-            <div class=" container-fluid slider">
-                <div class=" row mainSlider">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="slider">
+                            <div class="slider-container">
+                                <div class="slider-item active-slide">
+                                    <div class="slider-content animated bounceInLeft moved-text">
+                                        <h2>Digital</h2>
+                                        <h1>Agency</h1>
+                                        <span></span>
+                                        <p>We Are Creative</p>
+                                        <span></span>
+                                    </div>
+                                    <img src="img/15.jpg">
+                                </div>
+                                <div class="slider-item ">
+                                    <div class="slider-content moved-text-second">
+                                        <div class="movv">
+                                            <div class="movv-text">
+                                                <span>One Page Layout &</span>
+                                                <span>Many More Features</span>
+                                                <p class="my-4"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Eaque error
+                                                    doloremque suscipit soluta
+                                                </p>
+                                                <div class="purc"> <a href="./homeIndex.html">Read more</a>
+                                                    <a href="./homeIndex.html">Purchasebnow!</a>
+                                                </div>
+                                            </div>
+                                            <div class="movv-img">
+                                                <div><img src="img/screen1.png" alt="23"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="img/28.jpg">
+                                </div>
+                                <div class="slider-item ">
 
-                    <div class="slidePart show">
-                        <div class="slider-content animated bounceInLeft">
-                            <p class="slider-content-header">Slider item 1 header</p>
-                            <p class="slider-content-body">Slider item 1 body</p>
+                                    <div class="slider-content moved-text-third">
+                                        <h2>Modern &</h2>
+                                        <h1>Creative</h1>
+                                        <span></span>
+                                        <p>We Are Creative</p>
+                                        <span></span>
+                                        <div class="square-third"></div>
+                                    </div>
+
+                                    <img src="img/29.jpg">
+                                </div>
+                                <div class="slider-item clone">
+                                    <div class="slider-content animated bounceInLeft moved-text">
+                                        <h2>Digital</h2>
+                                        <h1>Agency</h1>
+                                        <span></span>
+                                        <p>We Are Creative</p>
+                                        <span></span>
+                                    </div>
+                                    <img src="img/15.jpg">
+                                </div>
+                            </div>
+                            <button class="slider-button slider-button-left"><i class="fas fa-angle-left"></i></button>
+                            <button class="slider-button slider-button-right"><i
+                                    class="fas fa-angle-right"></i></button>
                         </div>
-                        <img src="img/15.jpg">
-                    </div>
-                    <div class="slidePart">
-                        <div class="slider-content">
-                            <p class="slider-content-header">Slider item 2 header</p>
-                            <p class="slider-content-body">Slider item 2 body</p>
-                        </div>
-                        <img src="img/28.jpg">
-                    </div>
-                    <div class="slidePart">
-                        <div class="slider-content">
-                            <p class="slider-content-header">Slider item 3 header</p>
-                            <p class="slider-content-body">Slider item 3 body</p>
-                        </div>
-                        <img src="img/29.jpg">
                     </div>
                 </div>
-                <button class="sliderBtn prevBtn"><i class="fas fa-angle-left"></i></button>
-                <button class="sliderBtn nextBtn"><i class="fas fa-angle-right"></i></button>
             </div>
         </section>
         <section>
@@ -602,7 +646,6 @@
                         <div class="videoPart">
                             <h1>ADD YOUR OWN<br />YOUTUBE VIDEO BACKGROUNDS</h1>
                         </div>
-
                         <video width="100%" controls>
                             <source src="video/game_of_thrones.mp4" type="video/mp4">
                         </video>
@@ -978,13 +1021,13 @@
                     </div>
                     <div class="col-md-3 col-lg-3  p-0 tableSection premiumPart">
                         <div class="tablePart">
-                            <div class="tableHead ptemiumHead">
+                            <div class="tableHead premiumHead">
+                                <h1>Premium</h1>
+                                <h2><sup>$</sup>39.9/<span>mo</span></h2>
                                 <div class="specificPic">
                                     <div class="prem">
-                                        <h1>Premium</h1>
-                                        <h2><sup>$</sup>39.9/<span>mo</span></h2>
                                     </div>
-                                    <!-- <img src="img/777.png" alt="777"> -->
+                                    <img src="img/777.png" alt="777">
                                 </div>
                             </div>
                             <ul class="tableList premiumList">
@@ -1085,7 +1128,7 @@
                                 est Curabitur eget orci.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="largee">
                             <a href="./homeIndex.html" class="largeBtn">Read More</a>
                         </div>
@@ -1183,8 +1226,7 @@
                                 <li><a href="./homeIndex.html"><i class="fab fa-twitter"></i></a></li>
                             </div>
                             <div class="border-list">
-                                <li class="px-3"><a href="./homeIndex.html"><i
-                                            class="fab fa-facebook-f"></i></a></li>
+                                <li class="px-3"><a href="./homeIndex.html"><i class="fab fa-facebook-f"></i></a></li>
                             </div>
                             <div class="border-list">
                                 <li><a href="./homeIndex.html"><i class="fab fa-google-plus-g"></i></a></li>
@@ -1209,9 +1251,8 @@
         </div>
     </footer>
 
-
-
-    <script src="js/script.js"></script>
+     <script src="js/generalScript.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>

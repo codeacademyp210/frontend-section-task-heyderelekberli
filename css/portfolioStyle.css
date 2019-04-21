@@ -1,0 +1,119 @@
+.slide-col{
+    width:100%;
+    height:350px;
+}
+.indicator-icon{
+    display:flex;
+    width:100%;
+    height:10%;
+    justify-content: space-between;
+    z-index: 40;
+}
+.slider {
+    position: relative;
+    height: 90%;;
+    width: 100%;
+    overflow: hidden;
+}
+.mainSlider{
+    position: relative;
+    width:100%;
+    height: 100%;
+    transition: all 0.7s;
+}
+.slider .slidePart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slidePart>div{
+    width:100%;
+    height:100%;
+}
+.slider .slidePart img {
+    width: 100%;
+    height: 100%;
+}
+.sliderBtn{
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    z-index: 20;
+    outline: none;
+    position: relative;
+    background: #7c8b90;
+    line-height: 22px;
+    text-align: center;
+    font-size:16px;
+    height: 22px;
+    width: 21px;
+    border-radius:2px;
+
+  }
+  .box-slider{
+      width:25%;
+      height:100%;
+      float: left;
+  }
+  .box{
+      width:94%;
+      height:80%;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+ 
+  }
+  .box>img{
+      width:100%;
+      height:100%;
+      transition: all 0.4s;
+      z-index: 13;
+  }
+.bottom-box{
+    position: absolute;
+    width:100%;
+    height:60px;
+    bottom:0px;
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.bottom-box>a{
+    padding:6px 10px;
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    margin-right:8px;
+    transition: all 0.4s;
+    z-index: 2;
+
+}
+.bottom-box>a:hover{
+    background-color: #333;
+    color:white;
+
+}
+.box:hover img{
+    transform: translate(0px, -60px)
+}
+.box-slider>h4{
+    color:#555;
+    font-size:16px;
+    margin:7px 0px;
+    font-weight: bold;
+}
+.box-slider>p{
+    color:#727272;
+    font-size:13px;
+}
